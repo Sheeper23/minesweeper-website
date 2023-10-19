@@ -5,8 +5,8 @@ import Cell from "./Cell";
 
 export default function GameGrid() {
     const rows = 16
-    const cols = 32
-    const mines = 80
+    const cols = 16
+    const mines = 40
     
     const firstClick = useRef(true)
     const gridRef = useRef([...Array(rows)].map((_, i) => {
@@ -227,7 +227,7 @@ export default function GameGrid() {
     // }
 
     return (
-        <div className="flex flex-col select-none">
+        <div style={{aspectRatio: cols/rows}} className={`flex flex-col max-w-full h-full select-none`}>
             {
                 [...Array(rows)].map((_, i) => (
                     <div key={i} className="flex">

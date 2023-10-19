@@ -70,7 +70,7 @@ export default function Cell({
         <div
         onClick={() => onLeftClick(coords)}
         onContextMenu={(e) => {e.preventDefault(); onRightClick(coords)}}
-        className={`w-8 aspect-square flex items-center justify-center box-border`}>
+        className={`aspect-square flex box-border`}>
             {flagged ? <Image draggable={false} className="grow" src={MinesweeperFlag} alt="flag" /> : cleared ? display : display = <Image draggable={false} className="grow" src={MinesweeperUnopened} alt="uo" />}
         </div>
     )
