@@ -143,49 +143,49 @@ export default function GameGrid() {
         	// top left
         	if ((Math.floor(i/cols) - 1 >= 0 && i%cols - 1 >= 0) && grid[Math.floor(i/cols) - 1][i%cols - 1].minesAround === -1) {
         		numMines++
-                console.log(`loged`)
+                // console.log(`loged`)
         	}
         	
         	// top middle
         	if (Math.floor(i/cols) - 1 >= 0 && grid[Math.floor(i/cols) - 1][i%cols].minesAround === -1) {
         		numMines++
-                console.log(`loged`)
+                // console.log(`loged`)
         	}
         	
         	// top right
         	if ((Math.floor(i/cols) - 1 >= 0 && i%cols + 1 < cols) && grid[Math.floor(i/cols) - 1][i%cols + 1].minesAround === -1) {
         		numMines++
-                console.log(`loged`)
+                // console.log(`loged`)
         	}
         	
         	// middle left
         	if (i%cols - 1 >= 0 && grid[Math.floor(i/cols)][i%cols - 1].minesAround === -1) {
         		numMines++
-                console.log(`loged`)
+                // console.log(`loged`)
         	}
         	
         	// middle right
         	if (i%cols + 1 < cols && grid[Math.floor(i/cols)][i%cols + 1].minesAround === -1) {
         		numMines++
-                console.log(`loged`)
+                // console.log(`loged`)
         	}
         	
         	// bottom left
         	if ((Math.floor(i/cols) + 1 < rows && i%cols - 1 >= 0) && grid[Math.floor(i/cols) + 1][i%cols - 1].minesAround === -1) {
         		numMines++
-                console.log(`loged`)
+                // console.log(`loged`)
         	}
         	
         	// bottom middle
         	if (Math.floor(i/cols) + 1 < rows && grid[Math.floor(i/cols) + 1][i%cols].minesAround === -1) {
         		numMines++
-                console.log(`loged`)
+                // console.log(`loged`)
         	}
         	
         	// bottom right
         	if ((Math.floor(i/cols) + 1 < rows && i%cols + 1 < cols) && grid[Math.floor(i/cols) + 1][i%cols + 1].minesAround === -1) {
         		numMines++
-                console.log(`loged`)
+                // console.log(`loged`)
         	}
         	
         	// updateGrid([Math.floor(i/cols), i%cols], {minesAround: numMines})
